@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best Movies According to Faqih</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Best Movies According to Faqih</h1>
+        <h2>My top 3 movies of all-time.</h2>
+    </header>
+    <hr />
+    <section>
+        <article>
+            <h3>One Piece</h3>
+            <a href="https://onepiece.fandom.com/id/wiki/Halaman_Utama" target="_blank">Read</a>
+            <a href="https://www.bilibili.tv/play/37976" target="_blank">Watch</a>
+            <img src="OnePiece.jpg" alt="One Piece" width="200px" height="150px">
+            <p>This is my favourite anime. I love the adventure.</p>
+        </article>
+        <article>
+            <h3>Transformers</h3>
+            <a href="https://transformers.fandom.com/wiki/Main_Page" target="_blank">Read</a>
+            <a href="https://www.bilibili.tv/id/search-result?q=transformers" target="_blank">Watch</a>
+            <img src="Transformers.jpg" alt="Transformers" width="200px" height="150px">
+            <p>I Like Sci-fi movies.</p>
+        </article>
+        <article>
+            <h3>Jurassic Movie</h3>
+            <a href="https://jurassicpark.fandom.com/wiki/Jurassic_World_(film)" target="_blank">Read</a>
+            <a href="https://www.bilibili.tv/id/search-result?q=Jurassic" target="_blank">Watch</a>
+            <img src="Juras.jpg" alt="Jurassic Movie" width="200px" height="150px">
+            <p>I Liked this film because of the prehistoric theme.</p>
+        </article>
+    </section>
+
+    <script>
+        // Tambahkan event listener pada semua link
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Mencegah link berfungsi secara default
+                window.open(event.target.href, '_blank'); // Buka link di tab baru
+            });
+        });
+    </script>
+</body>
+
+</html>
